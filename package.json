@@ -1,0 +1,29 @@
+{
+  "name": "buddy-robot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start-robot\" \"npm run start-interface\"",
+    "start-robot": "nodemon ./app.mjs --ignore interface",
+    "start-interface": "cd interface && npm run start"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Achaak/buddy-robot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Achaak/buddy-robot/issues"
+  },
+  "homepage": "https://github.com/Achaak/buddy-robot#readme",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
