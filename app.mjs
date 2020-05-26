@@ -1,6 +1,5 @@
 import http from "http"
 import core from "./core/index.js"
-import { exec } from "child_process"
 import socketIo from 'socket.io'
 
 let server = http.createServer()

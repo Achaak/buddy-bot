@@ -10,8 +10,8 @@ import openSocket from 'socket.io-client';
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
 
-// WEBPARTS
 import { Home, Direction } from './Pages'
+import { Header } from './Components'
 
 import './App.scss'
 
@@ -20,16 +20,20 @@ const App = () => {
   const socket = openSocket('http://localhost:8080');
 
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <Home socket={socket} />
-        </Route>
-        <Route exact path="/direction">
-          <Direction socket={socket} />
-        </Route>
-      </Switch>
-    </Router>
+    <div className="app">
+      <Router>
+        <Header />
+
+        <Switch>
+          <Route exact path="/">
+            <Home socket={socket} />
+          </Route>
+          <Route exact path="/direction">
+            <Direction socket={socket} />
+          </Route>
+        </Switch>
+      </Router>
+    </div>
   )
 }
 

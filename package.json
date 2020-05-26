@@ -4,8 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "i": "npm i && cd interface && npm i",
+
+    "dev": "concurrently \"npm run dev-robot\" \"npm run dev-interface\"",
+    "dev-robot": "nodemon ./app.mjs --ignore interface",
+    "dev-interface": "cd interface && npm run start",
+
     "start": "concurrently \"npm run start-robot\" \"npm run start-interface\"",
-    "start-robot": "nodemon ./app.mjs --ignore interface",
+    "start-robot": "node ./app.mjs",
     "start-interface": "cd interface && npm run start"
   },
   "type": "module",
@@ -21,6 +27,7 @@
   "homepage": "https://github.com/Achaak/buddy-robot#readme",
   "dependencies": {
     "concurrently": "^5.2.0",
+    "http": "0.0.1-security",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
