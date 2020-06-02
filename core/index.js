@@ -9,6 +9,11 @@ class Core {
   constructor(io) {
     this.io = io
 
+    this.init()
+  }
+
+  async init() {
+    // Init config
     await this.getConfig()
 
     // Initialize
