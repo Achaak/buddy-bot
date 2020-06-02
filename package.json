@@ -24,11 +24,10 @@
   },
   "homepage": "https://github.com/Achaak/buddy-robot#readme",
   "dependencies": {
+    "@types/rpi-gpio": "^2.1.0",
     "concurrently": "^5.2.0",
     "http": "0.0.1-security",
-    "motor-l298n": "0.0.1",
-    "socket.io": "^2.3.0",
-    "wiring-pi": "^2.2.1"
+    "socket.io": "^2.3.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
