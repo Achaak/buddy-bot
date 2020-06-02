@@ -27,7 +27,7 @@
     "@types/rpi-gpio": "^2.1.0",
     "concurrently": "^5.2.0",
     "http": "0.0.1-security",
-    "rpi-gpio": "^2.1.7",
+    "onoff": "^6.0.0",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
