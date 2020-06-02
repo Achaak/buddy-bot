@@ -9,7 +9,7 @@ class Core {
   constructor(io) {
     this.io = io
 
-    this.getConfig()
+    await this.getConfig()
 
     // Initialize
     this.detectors = new Detectors({io: io, config: this.config})
