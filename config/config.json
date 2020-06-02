@@ -1,5 +1,8 @@
 {
   "distance_sensor_1": {
     
+  },
+  "wheels": {
+    "diameter": 10
   }
 }
