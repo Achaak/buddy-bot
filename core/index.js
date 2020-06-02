@@ -9,7 +9,6 @@ class Core {
   constructor(io) {
     this.io = io
 
-    console.log(config_file)
     this.getConfig()
 
     // Initialize
