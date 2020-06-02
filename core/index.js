@@ -17,13 +17,13 @@ class Core {
     await this.getConfig()
 
     // Initialize
-    this.detectors = new Detectors({io: io, config: this.config})
-    this.positions = new Positions({io: io, config: this.config, detectors: this.detectors})
-    this.map = new Mapping({io: io, config: this.config, detectors: this.detectors})
+    this.detectors = new Detectors({io: this.io, config: this.config})
+    this.positions = new Positions({io: this.io, config: this.config, detectors: this.detectors})
+    this.map = new Mapping({io: this.io, config: this.config, detectors: this.detectors})
 
     this.startLoop()
 
-    io.on("connection", (socket) => {
+    this.io.on("connection", (socket) => {
       console.log("New client connected");
     });
   }
