@@ -27,7 +27,8 @@
     "concurrently": "^5.2.0",
     "http": "0.0.1-security",
     "motor-l298n": "0.0.1",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.3.0",
+    "wiring-pi": "^2.2.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
