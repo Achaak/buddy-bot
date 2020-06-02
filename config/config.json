@@ -2,7 +2,12 @@
   "distance_sensor_1": {
     
   },
-  "wheels": {
-    "diameter": 10
+  "l298n": {
+    "in1Pin": 20,
+    "in2Pin": 16,
+    "enable1Pin": 21,
+    "in3Pin": 18,
+    "in4Pin": 23,
+    "enable2Pin": 24
   }
 }
