@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
 import openSocket from 'socket.io-client';
+import localIpUrl  from 'local-ip-url';
 
 // FONT AWESOME
 import '@fortawesome/fontawesome-free/css/all.css'
@@ -17,7 +18,18 @@ import './App.scss'
 
 
 const App = () => {
-  const socket = openSocket('http://localhost:8080');
+  const [socket, setSocket] = useState(null)
+
+  useEffect(() => {
+    getIp()
+
+    // eslint-disable-next-line
+  }, [])
+
+  const getIp = async () => {
+    const ip = localIpUrl('public', 'ipv4');
+    setSocket(openSocket(`http://${ip}:8080`));
+  }
 
   return (
     <div className="app">
