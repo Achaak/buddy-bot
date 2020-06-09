@@ -1,7 +1,4 @@
 {
-  "distance_sensor_1": {
-    
-  },
   "l298n": {
     "in1Pin": 20,
     "in2Pin": 16,
@@ -9,5 +6,13 @@
     "in3Pin": 18,
     "in4Pin": 23,
     "enable2Pin": 24
-  }
+  },
+  "distance_sensor": [
+    {
+      "HC-SR04_middle": {
+        "trig": 27,
+        "echo": 17
+      }
+    }
+  ]
 }
