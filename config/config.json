@@ -7,12 +7,10 @@
     "in4Pin": 23,
     "enable2Pin": 24
   },
-  "distance_sensor": [
-    {
-      "HC-SR04_middle": {
-        "trig": 27,
-        "echo": 17
-      }
+  "distance_sensor": {
+    "HC-SR04_middle": {
+      "trig": 27,
+      "echo": 17
     }
-  ]
+  }
 }
