@@ -10,7 +10,7 @@
     "dev-interface": "cd interface && npm run start",
     "start": "concurrently \"npm run start-robot\" \"npm run start-interface\"",
     "start-robot": "node ./app.mjs",
-    "start-interface": "cd interface && npm run start"
+    "start-interface": "cd interface && serve -s build"
   },
   "type": "module",
   "repository": {
