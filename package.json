@@ -33,7 +33,6 @@
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
-    "local-ip-url": "^1.0.3",
     "nodemon": "^2.0.4"
   }
 }
