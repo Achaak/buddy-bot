@@ -8,13 +8,10 @@
     "enable2Pin": 24
   },
   "distance_sensor": {
-    "left": {
-      "trig": 19,
-      "echo": 26
-    },
-    "middle": {
-      "trig": 27,
-      "echo": 17
+    "trigPin": 27,
+    "sensors": {
+      "leftEcho": 26,
+      "middleEcho": 17
     }
   }
 }
