@@ -30,7 +30,7 @@
     "concurrently": "^5.2.0",
     "http": "0.0.1-security",
     "pigpio": "^3.2.3",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.5.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
